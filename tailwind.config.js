@@ -11,6 +11,21 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+
+      minHeight:{
+        'fit':'fit-content'
+      },
+
+      height:{
+        'fit':'fit-content'
+      },
+
+      fontFamily:{
+        raleway:['var(--font-raleway)'],
+        quicksand:['var(--font-quicksand)'],
+        inter:['var(--font-inter)'],
+      }
+      
     },
   },
   plugins: [],

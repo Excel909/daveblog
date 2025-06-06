@@ -1,0 +1,16 @@
+.prevImg img{
+    transition: transform 0.5s ease;
+}
+
+.prevImg:hover img{
+    transform: scale(1.1);
+}
+
+.text{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.texter{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
