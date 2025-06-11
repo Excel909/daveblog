@@ -2,6 +2,11 @@ import {Quicksand} from 'next/font/google';
 import { Raleway } from 'next/font/google';
 import { Inter } from 'next/font/google';
 import Nav from './components/nav';
+import Image from 'next/image';
+import { FaPhoneSquareAlt } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+import { FaYoutube } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa6";
 
 export const metadata = {
   title: "Daveblog",
@@ -46,6 +51,34 @@ export default function RootLayout({ children }) {
             <div>
               {children}
             </div>
+
+            <div className='w-full lg:h-[45vh] bg-gray-100 grid lg:grid-cols-[60%_20%_20%] h-fit'>
+            <div className='w-full h-full p-10'>
+              <div className='w-[100px] h-[100px]'>
+                <Image src='/android-chrome-192x192.png' width={1000} height={1000} alt='logo' className='w-full h-full object-cover' />
+              </div>
+
+              <div className='mt-5'>
+                <ul className='leading-loose'>
+                  <li className='flex justify-center items-center w-fit gap-3 font-quicksand font-semibold'><span className='text-slate-500 text-xl'><FaPhoneSquareAlt /></span> +2345678910654</li>
+
+                  <li className='flex justify-center items-center w-fit gap-3 font-quicksand font-semibold'><span className='text-slate-500 text-xl'><MdEmail /></span> greatdave@gmail.com</li>
+
+                  <li className='flex justify-center items-center w-fit gap-3 font-quicksand font-semibold'><span className='text-slate-500 text-xl'><FaYoutube /></span> youtube.com</li>
+
+                  <li className='flex justify-center items-center w-fit gap-3 font-quicksand font-semibold'><span className='text-slate-500 text-xl'><FaFacebook /></span> facebook.com</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className='w-full h-full '>
+
+            </div>
+
+            <div className='w-full h-full '>
+
+            </div>
+          </div>
         </div>
       </body>
     </html>

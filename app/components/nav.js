@@ -12,7 +12,7 @@ export default function Nav() {
   const [navShow, setNavShow] = useState(false);
   return (
     <div className="w-full relative">
-        <div className="flex w-full h-[15vh] border-b-2 border-b-slate-500 justify-around items-center z-index sticky top-0 left-0 shadow-sm bg-white">
+        <div className="flex w-full h-[15vh] border-b-2 border-b-slate-200 justify-around items-center z-index sticky top-0 left-0 shadow-sm bg-white">
           <div className="lg:w-fit w-full flex lg:gap-[100px] h-fit lg:justify-center justify-around items-center">
             <div className="font-raleway font-semibold text-2xl cursor-default">
               Dave<span className="text-blue-700">blog</span>
@@ -22,7 +22,7 @@ export default function Nav() {
                 <Link href='/' className="w-fit p-3 font-semibold hover:text-blue-700">Home</Link>
                 <Link href='/' className="w-fit p-3 font-semibold hover:text-blue-700">About</Link>
                 <Link href='/' className="w-fit p-3 font-semibold hover:text-blue-700">Contact</Link>
-                <Link href='/' className="w-fit p-3 font-semibold hover:text-blue-700">Pages</Link>
+                <Link href='/list' className="w-fit p-3 font-semibold hover:text-blue-700">Pages</Link>
             </div>
 
             <div className="p-5 text-2xl lg:hidden block" onClick={() => setNavShow(true)}>
@@ -47,7 +47,7 @@ export default function Nav() {
             <li className="mt-2"><Link href='/' className="p-3 border-b-2 border-b-slate-600 block">Home</Link></li>
             <li className="mt-2"><Link href='/' className="p-3 border-b-2 border-b-slate-600 block">About</Link></li>
             <li className="mt-2"><Link href='/' className="p-3 border-b-2 border-b-slate-600 block">Contact Us</Link></li>
-            <li className="mt-2"><Link href='/' className="p-3 border-b-2 border-b-slate-600 block">Posts</Link></li>
+            <li className="mt-2"><Link href='/list' className="p-3 border-b-2 border-b-slate-600 block">Posts</Link></li>
           </ul>
           
           </div>}
