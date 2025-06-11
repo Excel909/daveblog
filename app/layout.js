@@ -60,13 +60,13 @@ export default function RootLayout({ children }) {
 
               <div className='mt-5'>
                 <ul className='leading-loose'>
-                  <li className='flex justify-center items-center w-fit gap-3 font-quicksand font-semibold'><span className='text-slate-500 text-xl'><FaPhoneSquareAlt /></span> +2345678910654</li>
+                  <li className='flex justify-center items-center w-fit gap-3 font-quicksand font-semibold'><span className='text-slate-500 text-xl'><FaPhoneSquareAlt /></span> +2349020921692</li>
 
                   <li className='flex justify-center items-center w-fit gap-3 font-quicksand font-semibold'><span className='text-slate-500 text-xl'><MdEmail /></span> greatdave@gmail.com</li>
 
-                  <li className='flex justify-center items-center w-fit gap-3 font-quicksand font-semibold'><span className='text-slate-500 text-xl'><FaYoutube /></span> youtube.com</li>
+                  <li className='flex justify-center items-center w-fit gap-3 font-quicksand font-semibold'><span className='text-slate-500 text-xl'><FaYoutube /></span> @Greatdaveafricainsight</li>
 
-                  <li className='flex justify-center items-center w-fit gap-3 font-quicksand font-semibold'><span className='text-slate-500 text-xl'><FaFacebook /></span> facebook.com</li>
+                  <li className='flex justify-center items-center w-fit gap-3 font-quicksand font-semibold'><span className='text-slate-500 text-xl'><FaFacebook /></span> @GreatDaveAfricaInsight</li>
                 </ul>
               </div>
             </div>
