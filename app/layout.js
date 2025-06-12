@@ -9,7 +9,7 @@ import { FaYoutube } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa6";
 
 export const metadata = {
-  title: "Daveblog",
+  title: "GreatDave",
   description: "A blog website",
 };
 

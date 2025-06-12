@@ -6,6 +6,8 @@ import '@/app/globals.css';
 import { formatDate } from "@/lib/functions/dateFormatter";
 import Image from "next/image";
 import ReactPlayer from "react-player";
+import { IoEyeSharp } from "react-icons/io5";
+import { FaPenNib } from "react-icons/fa6";
 
 export default function ViewPost() {
     const { slug } = useParams();
@@ -100,8 +102,15 @@ export default function ViewPost() {
                 <Image src={post?.postPic} alt='blog pic' height={1000} width={1000} className='w-full h-full object-cover' />
             </div>
 
-            <div className="mt-10 pb-[100px] font-quicksand w-full text-lg leading-loose">
+            <div className="mt-10 font-quicksand w-full text-lg leading-loose">
                 {post?.content || 'Loading...'}
+            </div>
+
+            <div className='mt-10 mb-[100px] bg-gray-100 p-5'>
+
+                <div className="flex justify-center items-center gap-2 w-fit"><FaPenNib /><i>{post?.author}</i></div>
+                
+                <div className='mt-2 flex justify-center items-center gap-2 w-fit'><IoEyeSharp />{post?.views}</div>
             </div>
 
             {post.videoSrc && (
