@@ -12,20 +12,19 @@ export default function Contact(){
     const [message,setMessage] = useState('');
 
     const handleReset = () => {
-        if(state.succeeded){
+
             setTimeout(() => {
             setName('');
             setEmail('');
             setMessage('');
         },2000)
-        }
     }
 
     return(
         <>
             <div className='container min-h-screen mt-[20px] text-gray-700 pb-[200px]'>
                 <div className='font-quicksand font-bold flex justify-center items-center p-5 gap-2 text-2xl'>
-                    Contact
+                   <IoMailOpen/> Contact
                 </div>
 
                 <div className='m-auto mt-2 lg:w-[80vh] w-[90%] leading-loose font-quicksand text-center font-semibold'>
@@ -34,12 +33,12 @@ export default function Contact(){
 
                 <div className='mt-8 lg:w-fit w-full m-auto '>
 
-                    {state.succeeded && <div className='pb-3 text-red-600 font-quicksand font-bold'>Thanks! for reaching out.</div>}
+                    {state.succeeded && <div className='pb-3 text-red-600 font-quicksand font-bold text-center'>Thanks! for reaching out.</div>}
 
                     <form onSubmit={handleSubmit}>
                         <div className='flex lg:w-fit w-full lg:flex-row flex-col lg:gap-10 gap-3 h-fit justify-center items-center'>
                             <label htmlFor='name'>
-                                <input type='text' placeholder='Name' className='border p-3 w-[300px] border-gray-400 focus:outline-none rounded-md' required minLength={4} value={name} onChange={(e) => setName(e.target.value)}/>
+                                <input type='text' placeholder='Name' className='border p-3 w-[300px] border-gray-400 focus:outline-none rounded-md' required minLength={4} value={name} onChange={(e) => setName(e.target.value)} name='name'/>
                             </label>
                             <ValidationError 
                                 prefix="Name" 
@@ -48,7 +47,7 @@ export default function Contact(){
                             />
 
                             <label htmlFor='email'>
-                                <input type='email' placeholder='Email' className='border p-3 w-[300px] lg:mt-0 mt-5 border-gray-400 focus:outline-none rounded-md' required minLength={12} value={email} onChange={(e) => setEmail(e.target.value)}/>
+                                <input type='email' placeholder='Email' className='border p-3 w-[300px] lg:mt-0 mt-5 border-gray-400 focus:outline-none rounded-md' required minLength={12} value={email} name='email' onChange={(e) => setEmail(e.target.value)}/>
                             </label>
                             <ValidationError 
                                 prefix="Email" 
@@ -59,7 +58,7 @@ export default function Contact(){
 
                         <div className='mt-5 lg:w-full w-fit m-auto'>
                             <label htmlFor='message'>
-                                <textarea className='lg:w-full w-[350px] h-[200px] border border-gray-400 p-5 focus:outline-none lg:h-[250px] rounded-md' placeholder='Message' minLength={10} required value={message} onChange={(e) => setMessage(e.target.value)}/>
+                                <textarea className='lg:w-full w-[350px] h-[200px] border border-gray-400 p-5 focus:outline-none lg:h-[250px] rounded-md' placeholder='Message' minLength={10} required value={message} onChange={(e) => setMessage(e.target.value)} name='message'/>
                             </label>
 
                             <ValidationError 
